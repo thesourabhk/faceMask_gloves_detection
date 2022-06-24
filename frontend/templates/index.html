@@ -3,7 +3,10 @@
 <h1 style="text-align: center">Face mask</h1>
 <div style="justify-content: center; display: flex; margin-top: 20px">
   <img src="{{ url_for('video') }}" alt="Camera" />
-  <div class="start_stop"><button>Start</button><button>Stop</button></div>
+  <form method="post" action="/">
+    <input type="submit" value="START" name="start" />
+    <input type="submit" value="STOP" name="stop" />
+  </form>
 </div>
 
 {% endblock %}
